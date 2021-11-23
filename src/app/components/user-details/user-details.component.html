@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="card mb-3">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{usuarios.name}}</h5>
+          <p class="card-text">{{usuarios.website}}</p>
+          <p class="card-text">{{usuarios.company.name}}</p>
+          <p class="card-text">{{usuarios.company.catchPhrase}}</p>
+        </div>
+        <div class="card-body">
+          <a [routerLink]="['/user',usuarios.id,'albums-detail']" class="btn btn-primary">Albums</a>
+          <a [routerLink]="['/user',usuarios.id,'todos-details']" class="btn btn-primary">TODOS</a>
+          <a [routerLink]="['/user',usuarios.id,'posts-details']" class="btn btn-primary">Posts</a>
+        </div>
+    </div>
+</div>

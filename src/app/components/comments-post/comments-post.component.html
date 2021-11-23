@@ -1,0 +1,26 @@
+<div>
+  
+    <h1>comentario y sus Posts</h1>
+    <button [routerLink]="['/posts']" class="btn btn-primary"> Volver</button>
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Id Usuario</th>
+          <th scope="col">Titulo</th>
+          <th scope="col">Email</th>
+          <th scope="col">Body</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let comments of Comments">
+          <th >{{comments.postId}}</th>
+          <td>{{comments.name}}</td>
+          <td>{{comments.email}}</td>
+          <td>{{comments.body}}</td>
+        </tr>
+       
+      </tbody>
+    </table>
+  
+  </div>
+

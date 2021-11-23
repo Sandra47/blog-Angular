@@ -1,0 +1,24 @@
+<div>
+  
+    <h1>Usuarios y sus Albunes</h1>
+    <!-- <button [routerLink]="['/user/:userId/user-details']" class="btn btn-primary"> Volver</button> -->
+
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Id Usuario</th>
+          <th scope="col">Id</th>
+          <th scope="col">Titulo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let albums of albums">
+          <th >{{albums.userId}}</th>
+          <td>{{albums.id}}</td>
+          <td>{{albums.title}}</td>
+        </tr>
+       
+      </tbody>
+    </table>
+  
+  </div>
