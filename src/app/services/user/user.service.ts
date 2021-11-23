@@ -16,13 +16,7 @@ export class UserService {
     
     //generams un metodo del api
     getUsuarios():Observable<any>{
-     // const path='https://jsonplaceholder.typicode.com/posts';
-      //return this.http.get<Usuarios[]>(path);
-      // let header = new HttpHeaders()
-      // .set('Type-Content', 'aplication/json')
-      // return this.http.get(this.url,{
-      //   headers:header
-      // });
+   
       return this.http.get<any>(url+"/"+"users");
 
     }

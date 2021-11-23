@@ -25,19 +25,6 @@ export class UserDetailsComponent implements OnInit {
     console.log(this.usuarios)
   }
 
-//  //vamos hacer un arreglo
-//    public usuarios:Array<any>=[]
-//    //vamos a inyectar los usuarios
-//    constructor(
-//      private userService:UserService
-//    ){
-//  //vamos a suscribir
-//    this.userService.getUser(id).subscribe((resp: any) =>{
-//      //console.log(resp)
-//      this.usuarios=resp
-//    });
-//    }
-
    getUserById(){
      return this.activateRoute.params.subscribe(params=>{
        let userId= params['userId']

@@ -17,8 +17,8 @@
               <th scope="row">{{album.id}}</th>
               <td>{{album.userId}}</td>
               <td>{{album.title}}</td>
-              <td>
-                <button class="btn btn-primary" > Ver fotos</button>
+              <td>      
+                <button class="btn btn-primary" [routerLink]="['/albums',album.id,'photos']" > Ver fotos</button>
 
                 <!-- <button class="btn btn-primary" [routerLink]="['/user',usuario.id,'user-details']"> Ver detalles</button> -->
               </td>

@@ -18,4 +18,8 @@ export class AlbumsService {
     return this.http.get<any>(url+"/"+"albums");
 
   }
+  getAlbumsPhotos(albumId:any):Observable<any>{
+    return this.http.get<any>(url+"/"+"albums"+"/"+albumId+"/photos");
+
+  }
 }

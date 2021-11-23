@@ -1,4 +1,5 @@
-# PruebaAngular
+# BlogAngular
+Este proyecto es un blog donde se lista los usuarios y los posteos y albums. consume una api https://jsonplaceholder.typicode.com/  en el cual podemos tener los datos para mostrar en nuestro glog
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
 
@@ -96,13 +97,8 @@ getAllPosts(){
 
 
 ,,,,,,
-se crea un botton
-<button {click}="getAllPosts()">getAllPosts()</button>
-,,,,,,
-
-,,,,,,
 Creamos una variable api
-private api= 'https://jsonplaceholder.typicode.com/posts';
+private url= 'https://jsonplaceholder.typicode.com/posts';
 ,,,,,,
 
 ,,,,,,
@@ -125,19 +121,5 @@ getPost(){
   });
 }
 ,,,,,,
-Creamos el la carpeta shared para nuestro buscador
-ng g c components/searc
-se nos crea los componentes que  necesitamos
-si nos vamos al search.component.ts
-tomamos 
-app-search
-y lo colocamos en posts
-para q se nos mustra nuestro buscador en lo posts
-,,,,,,
-
-
-......
- ![Screenshot](https://drive.google.com/drive/folders/1TuWPTxzI4Y6SfMYBC1Lnn6hOtkoJyuZi)
-......
 
 
